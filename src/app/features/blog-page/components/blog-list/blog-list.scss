@@ -1,0 +1,53 @@
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .post-card {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .post-title {
+      font-size: 1.875rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .post-meta {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      font-weight: 400;
+
+      .tags {
+        color: var(--light);
+      }
+    }
+
+    .post-description {
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .post-card {
+      padding-bottom: 1.5rem;
+    }
+
+    .post-title {
+      font-size: 1.5rem;
+    }
+
+    .post-meta {
+      font-size: 1rem;
+      flex-wrap: wrap;
+    }
+  }
+}
