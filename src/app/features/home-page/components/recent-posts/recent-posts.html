@@ -1,0 +1,21 @@
+<section class="recent-posts">
+  <div class="container">
+    <div class="section-header">
+      <h2>Recent posts</h2>
+      <a routerLink="/blog" class="view-all">View all</a>
+    </div>
+    <div class="posts-list">
+      @for (post of recentPosts; track post.id) {
+      <article class="post-card">
+        <h3 class="post-title">{{ post.title }}</h3>
+        <div class="post-meta">
+          <span class="date">{{ post.date }}</span>
+          <span class="separator">|</span>
+          <span class="tags">{{ post.tags.join(', ') }}</span>
+        </div>
+        <p class="post-description">{{ post.description }}</p>
+      </article>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Hi, I am {{ profileData.name }},<br />
+          {{ profileData.title }}
+        </h1>
+        <p class="hero-description">{{ profileData.description }}</p>
+        <button class="btn-primary" (click)="downloadResume()">Download Resume</button>
+      </div>
+      <div class="hero-image">
+        <img [src]="profileData.image" [alt]="profileData.name" />
+      </div>
+    </div>
+  </div>
+</section>
