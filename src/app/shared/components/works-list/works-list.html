@@ -1,0 +1,15 @@
+<div class="works-list">
+  @for (work of recentWorks(); track work.id) {
+  <article class="work-item">
+    <div class="work-img"><img [src]="work.imgUrl" alt="work figure" /></div>
+    <div class="work-content">
+      <h3 class="work-title">{{ work.title }}</h3>
+      <div class="work-meta">
+        <span class="year">{{ work.year }}</span
+        ><span class="category">{{ work.category }}</span>
+      </div>
+      <p class="work-description">{{ work.description }}</p>
+    </div>
+  </article>
+  }
+</div>
