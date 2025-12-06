@@ -1,0 +1,23 @@
+.footer {
+  text-align: center;
+  height: 11.375rem;
+  align-content: center;
+  padding: 3rem 2rem 2rem;
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 1.875rem;
+      height: 1.875rem;
+    }
+  }
+
+  .copyright {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}

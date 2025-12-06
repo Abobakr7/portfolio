@@ -1,0 +1,7 @@
+<header class="header">
+  <nav class="nav">
+    @for (link of navLinks; track $index) {
+    <a [routerLink]="link.path" routerLinkActive="active" class="nav-link">{{ link.label }}</a>
+    }
+  </nav>
+</header>
