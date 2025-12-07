@@ -1,6 +1,6 @@
 <div class="works-list">
   @for (work of recentWorks(); track work.id) {
-  <article class="work-item">
+  <article class="work-item" (click)="navigate(work.id)">
     <div class="work-img"><img [src]="work.imgUrl" alt="work figure" /></div>
     <div class="work-content">
       <h3 class="work-title">{{ work.title }}</h3>
