@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 2rem;
   cursor: pointer;
-  padding: 2rem;
+  // padding: 2rem;
 
   .work-item {
     display: flex;
@@ -16,8 +16,6 @@
     }
 
     .work-img img {
-      width: 15.375rem;
-      height: 11.25rem;
       border-radius: 0.5rem;
     }
 
